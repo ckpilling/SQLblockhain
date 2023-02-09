@@ -1,0 +1,53 @@
+﻿@page
+@model SQLchain.Pages.Customers.HistoryModel
+@{
+}
+
+<br />
+<h2> List of Customers History</h2> 
+    <h5>This is the History table linked to the Updateable Customer Ledger table</h5>
+
+
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Created_At</th>
+            <th>ledger_trans_id</th>
+            <th>ledger_sequence</th>
+            <th>ledger_operation</th>
+            <th>ledger_op_desc</th>
+
+         
+         
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.listHistory)
+        {
+            <tr>
+              
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.email</td>
+                <td>@item.phone</td>
+                <td>@item.address</td>
+                <td>@item.created_at</td>
+                <td>@item.ledger_transaction_id</td>
+                <td>@item.ledger_sequence_number</td>
+                <td>@item.ledger_operation_type</td>
+                <td>@item.ledger_operation_desc</td>
+             
+           
+
+            </tr>
+        }
+
+    </tbody>
+</table>
