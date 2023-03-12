@@ -20,7 +20,7 @@ namespace SQLchain.Pages.Customers
 
             try
             {
-                String connectionString = "Data Source=192.168.0.28\\;Initial Catalog=clients;Persist Security Info=True;User ID=sa;Password=password0. ";
+                String connectionString = "Data Source=localhost\\;Initial Catalog=clients;Persist Security Info=True;User ID=sa;Password=password0. ";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -80,7 +80,7 @@ namespace SQLchain.Pages.Customers
             try
             {
 
-                String connectionString = "Data Source=192.168.0.28\\;Initial Catalog=clients;Persist Security Info=True;User ID=sa;Password=password0. ";
+                String connectionString = "Data Source=localhost\\;Initial Catalog=clients;Persist Security Info=True;User ID=sa;Password=password0. ";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
