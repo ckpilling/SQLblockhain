@@ -39,7 +39,7 @@ namespace SQLchain.Pages.Customers
                             {
                                 CustomerHistory customerHistory = new CustomerHistory();
                                 customerHistory.CommitTime = reader.GetDateTime(0).ToString();
-                                customerHistory.UserName = reader.GetString(0);
+                                // customerHistory.UserName = reader.GetString(0);
                                 customerHistory.id = "" + reader.GetInt32(0); 
                                 customerHistory.name = reader.GetString(1);
                                 customerHistory.email = reader.GetString(2);
