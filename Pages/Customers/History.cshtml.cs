@@ -38,8 +38,8 @@ namespace SQLchain.Pages.Customers
                             while (reader.Read())
                             {
                                 CustomerHistory customerHistory = new CustomerHistory();
-                                //   customerHistory.CommitTime = reader.GetDateTime(0).ToString();
-                                //   customerHistory.UserName = reader.GetString(0);
+                                customerHistory.CommitTime = reader.GetDateTime(0).ToString();
+                                customerHistory.UserName = reader.GetString(0);
                                 customerHistory.id = "" + reader.GetInt32(0); 
                                 customerHistory.name = reader.GetString(1);
                                 customerHistory.email = reader.GetString(2);
@@ -50,7 +50,7 @@ namespace SQLchain.Pages.Customers
                                 customerHistory.ledger_sequence_number = "" + reader.GetInt64(7);
                                 customerHistory.ledger_operation_type = "" + reader.GetInt32(8);
                                 customerHistory.ledger_operation_desc = reader.GetString(9);
-                                //   customerHistory.operation = reader.GetString(5);
+                                customerHistory.operation = reader.GetString(5);
 
                                 listHistory.Add(customerHistory);
 
