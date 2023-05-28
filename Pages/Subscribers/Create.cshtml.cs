@@ -32,7 +32,7 @@ namespace SQLchain.Pages.Subscribers
 
             try
             {
-                String connectionString = "Data Source=localhost\\;Initial Catalog=clients;Persist Security Info=True;User ID=sa;Password=password0. ";
+                String connectionString = "Server=tcp:verimy.database.windows.net,1433;Initial Catalog=SQLTables;Persist Security Info=False;User ID=verimysqladmin;Password=password0.;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
